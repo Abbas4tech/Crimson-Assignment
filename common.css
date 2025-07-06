@@ -1,13 +1,43 @@
 .button {
   padding: 0.625rem 1rem;
+  display: inline-flex;
+  align-items: center;
   transition: all 300ms ease-out;
   outline: none;
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 
   &.button-primary {
     background-color: var(--dark-blue);
     color: var(--glacier);
+    &:disabled {
+      opacity: 60%;
+      background-color: var(--disabled-blue);
+      cursor: not-allowed;
+    }
+  }
+
+  &.button-secondary {
+    background-color: var(--glacier);
+    border: 1px solid var(--dark-blue);
+    color: var(--dark-blue);
+  }
+
+  &.button-nav {
+    background-color: transparent;
+    &::after {
+      content: url("./assets/dropdown.svg");
+      display: inline-block;
+      height: 1.75rem;
+      margin-left: 0.25rem;
+    }
+  }
+
+  &.button-info {
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    font-weight: 500;
   }
 }
 

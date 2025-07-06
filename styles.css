@@ -14,7 +14,8 @@ body {
 }
 
 header,
-nav {
+nav,
+.heading-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +30,7 @@ main {
 
 .title-container {
   margin-block: 1rem;
-  padding-block: 1rem;
+  padding-block: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -39,11 +40,40 @@ main {
   .title {
     font-size: 2.5rem;
     line-height: 50px;
+    background: linear-gradient(
+      to right,
+      var(--blue),
+      var(--purple),
+      var(--red)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .description {
     font-size: 1.25rem;
     line-height: 30px;
+    text-align: center;
     color: var(--dark-gray);
+  }
+}
+
+.translation-tool {
+  background-color: var(--glacier);
+  border-radius: 2.5rem;
+  padding: 0.5rem;
+}
+
+.heading-container {
+  padding: 1.5rem;
+
+  .heading-container-title {
+    font-size: 1.5rem;
+    color: var(--medium-gray);
+  }
+
+  .heading-container-actions {
+    display: flex;
+    gap: 1rem;
   }
 }
