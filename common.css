@@ -11,13 +11,7 @@
   font-size: 1rem;
   width: max-content;
 
-  &[data-icon-placement="after"]::after {
-    content: var(--icon-url);
-    display: inline-block;
-    height: 1.25rem;
-    width: 1.25rem;
-  }
-
+  &[data-icon-placement="after"]::after,
   &[data-icon-placement="before"]::before {
     content: var(--icon-url);
     display: inline-block;
@@ -82,21 +76,27 @@
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
+/* Media Queries for responsiveness */
+
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
 }
+
 @media (min-width: 1215px) {
   .container {
     max-width: 1215px;
