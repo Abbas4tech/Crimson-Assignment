@@ -116,4 +116,10 @@ main {
   width: 0;
   border: 1px dashed var(--light-gray);
   position: relative;
+
+  .swap-btn {
+    position: absolute;
+    top: 1rem;
+    right: -1.75rem;
+  }
 }
