@@ -26,11 +26,11 @@ main {
   background: linear-gradient(to right, #fbf5f8, #f2e7fb);
   height: 100%;
   width: 100%;
+  padding: 3rem 0 5rem 0;
 }
 
 .title-container {
-  margin-block: 1rem;
-  padding-block: 3rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -76,4 +76,44 @@ main {
     display: flex;
     gap: 1rem;
   }
+}
+
+.translation-container {
+  background-color: var(--lighter-gray);
+  border-radius: 2.5rem;
+  display: flex;
+  .left-section-tool,
+  .right-section-tool {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+    textarea {
+      outline: none;
+      background-color: inherit;
+      border: none;
+      resize: none;
+      color: var(--medium-gray);
+      font-size: 1.25rem;
+    }
+
+    .section-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      div {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+.toggle-switch {
+  width: 0;
+  border: 1px dashed var(--light-gray);
+  position: relative;
 }
