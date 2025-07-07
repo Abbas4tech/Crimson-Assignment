@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="">
-    <header class="container">
+    <header class="container flex-container-between">
       <div>
         <img src="./assets/Logo.svg" alt="" />
       </div>
-      <nav>
+      <nav class="flex-container-between">
         <button class="button button-nav">Product</button>
         <button class="button button-nav">Trinka Business</button>
         <button class="button button-nav">Plans & Pricing</button>
@@ -30,41 +30,32 @@
         </p>
       </section>
       <section class="translation-tool container">
-        <div class="heading-container">
+        <div class="heading-container flex-container-between">
           <h5 class="heading-container-title">Translate Your Text</h5>
 
           <div class="heading-container-actions">
-            <button
-              data-icon-placement="before"
-              data-icon="./assets/History.svg"
-              class="button button-info"
-            >
-              History
+            <button class="button button-info">
+              <img src="./assets/History.svg" alt="" />
+              <span>History</span>
             </button>
-            <button
-              data-icon="./assets/settings.svg"
-              data-icon-placement="before"
-              class="button button-info"
-            >
-              Setting
+            <button class="button button-info">
+              <img src="./assets/settings.svg" alt="" />
+              <span>Settings</span>
             </button>
           </div>
         </div>
 
         <article class="translation-container">
           <section class="left-section-tool">
-            <button
-              data-icon-placement="after"
-              data-icon="./assets/stars.svg"
-              class="button button-hint"
-            >
+            <button class="button button-hint">
               <span>Detect Language</span>
+              <img src="./assets/stars.svg" alt="" />
             </button>
             <textarea
               placeholder="Type or paste your text here..."
               name=""
               id=""
-              rows="15"
+              rows="12"
             >
 Hola! Yo empecé aprendo Español hace dos mes en la escuela. Yo voy la universidad. Yo tratar estudioso Español tres hora todos los días para que yo saco mejor rápido. ¿Cosa algún yo debo hacer además construir mí vocabulario? Muchas veces yo estudioso la palabras solo para que yo construir mí voabulario rápido. Yo quiero empiezo leo el periódico Español la próxima semana. Por favor correcto algún la equivocaciónes yo hisciste. Gracias!
           </textarea
@@ -73,26 +64,20 @@ Hola! Yo empecé aprendo Español hace dos mes en la escuela. Yo voy la universi
               <span>0/5000</span>
 
               <div>
-                <button
-                  data-icon-placement="after"
-                  data-icon="./assets/attatchment.svg"
-                  class="button button-icon"
-                ></button>
-                <button
-                  data-icon-placement="after"
-                  class="button button-icon"
-                  data-icon="./assets/mic.svg"
-                ></button>
+                <button class="button button-icon">
+                  <img src="./assets/attatchment.svg" alt="" />
+                </button>
+                <button class="button button-icon">
+                  <img src="./assets/mic.svg" alt="" />
+                </button>
                 <button class="button button-primary">Translate</button>
               </div>
             </div>
           </section>
           <div class="toggle-switch">
-            <button
-              data-icon-placement="after"
-              data-icon="./assets/swap.svg"
-              class="button button-icon swap-btn"
-            ></button>
+            <button class="button button-icon swap-btn">
+              <img src="./assets/swap.svg" alt="" />
+            </button>
           </div>
           <section class="right-section-tool">
             <button
@@ -100,47 +85,40 @@ Hola! Yo empecé aprendo Español hace dos mes en la escuela. Yo voy la universi
               data-icon="./assets/globe.svg"
               class="button button-hint"
             >
-              English
+              <img src="./assets/globe.svg" alt="" />
+              <span>English</span>
             </button>
             <textarea
               placeholder="Waiting for translation ..."
               name=""
               id=""
-              rows="15"
+              rows="12"
             ></textarea>
             <div class="section-actions">
-              <span>0/5000</span>
+              <div class="toast toast-info">
+                <img src="./assets/bulb.svg" alt="" />
+                <span>Select text to get translation options.</span>
+              </div>
 
               <div>
-                <button
-                  data-tip="Copy"
-                  data-icon-placement="after"
-                  data-icon="./assets/copy-2.svg"
-                  class="button button-icon tooltip"
-                ></button>
+                <button data-tip="Copy" class="button button-icon tooltip">
+                  <img src="./assets/copy-2.svg" alt="" />
+                </button>
                 <button
                   data-tip="Translate by voice"
-                  data-icon-placement="after"
                   class="button button-icon tooltip"
-                  data-icon="./assets/speaker-2.svg"
-                ></button>
-                <button
-                  data-tip="Download"
-                  data-icon-placement="after"
-                  class="button button-icon tooltip"
-                  data-icon="./assets/download.svg"
-                ></button>
-                <button
-                  data-tip="Share"
-                  data-icon-placement="after"
-                  class="button button-icon tooltip"
-                  data-icon="./assets/share.svg"
-                ></button>
-                <button
-                  data-icon-placement="after"
-                  class="button button-icon"
-                  data-icon="./assets/star.svg"
-                ></button>
+                >
+                  <img src="./assets/speaker-2.svg" alt="" />
+                </button>
+                <button data-tip="Download" class="button button-icon tooltip">
+                  <img src="./assets/download.svg" alt="" />
+                </button>
+                <button data-tip="Share" class="button button-icon tooltip">
+                  <img src="./assets/share.svg" alt="" />
+                </button>
+                <button class="button button-icon">
+                  <img src="./assets/star.svg" alt="" />
+                </button>
               </div>
             </div>
           </section>
