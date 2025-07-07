@@ -14,8 +14,8 @@
   width: max-content;
 
   &.button-primary {
-    background-color: var(--dark-blue);
-    color: var(--glacier);
+    background-color: var(--color-primary);
+    color: var(--color-white);
     &:disabled {
       opacity: 60%;
       background-color: var(--disabled-blue);
@@ -24,9 +24,9 @@
   }
 
   &.button-secondary {
-    background-color: var(--glacier);
-    border: 1px solid var(--dark-blue);
-    color: var(--dark-blue);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
   }
 
   &.button-nav {
@@ -39,8 +39,8 @@
   }
 
   &.button-info {
-    background-color: var(--light-purple);
-    color: var(--dark-purple);
+    background-color: var(--color-primary-light);
+    color: var(--color-secondary-purple);
     font-weight: 500;
   }
 
@@ -53,18 +53,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--glacier);
-    color: var(--dark-blue);
+    background-color: var(--color-white);
+    color: var(--color-primary);
     transition: var(--transition-base);
     &:hover {
-      background-color: var(--light-purple);
+      background-color: var(--color-primary-light);
     }
   }
 
   &.button-dropdown,
   &.button-hint {
     border-radius: 9999px;
-    background-color: var(--glacier);
+    background-color: var(--color-white);
   }
 }
 
@@ -89,7 +89,7 @@
     position: absolute;
     padding: 13px;
     background-color: var(--tooltip-background);
-    color: var(--glacier);
+    color: var(--color-white);
     border-radius: 0.25rem;
     opacity: 0;
     font-size: var(--font-size-sm);
@@ -129,7 +129,7 @@
   font-weight: 500;
 
   &.toast-info {
-    color: var(--dark-purple);
-    background-color: var(--light-purple);
+    color: var(--color-secondary-purple);
+    background-color: var(--color-primary-light);
   }
 }

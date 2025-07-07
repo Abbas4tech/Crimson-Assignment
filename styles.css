@@ -17,7 +17,7 @@ main {
   padding: var(--spacing-md) 0 5rem 0;
 }
 
-.title-container {
+.hero-container {
   padding-bottom: var(--spacing-md);
   display: flex;
   flex-direction: column;
@@ -25,14 +25,14 @@ main {
   align-items: center;
   gap: var(--spacing-md);
 
-  .title {
+  .hero-title {
     font-size: var(--font-size-xxl);
     line-height: 30px;
     background: linear-gradient(
       to right,
-      var(--blue),
-      var(--purple),
-      var(--red)
+      var(--color-accent-blue),
+      var(--color-accent-purple),
+      var(--color-accent-red)
     );
     text-align: center;
     background-clip: text;
@@ -40,16 +40,16 @@ main {
     -webkit-text-fill-color: transparent;
   }
 
-  .description {
+  .hero-description {
     font-size: var(--font-size-md);
     line-height: var(--line-height-sm);
     text-align: center;
-    color: var(--dark-gray);
+    color: var(--color-gray-800);
   }
 }
 
 .translation-tool {
-  background-color: var(--glacier);
+  background-color: var(--color-white);
   border-radius: var(--spacing-xxl);
   padding: var(--spacing-md);
   display: flex;
@@ -62,7 +62,7 @@ main {
 
   .heading-container-title {
     font-size: var(--font-size-lg);
-    color: var(--medium-gray);
+    color: var(--color-gray-800);
   }
 
   .heading-container-actions {
@@ -72,15 +72,15 @@ main {
 }
 
 .translation-container {
-  background-color: var(--lighter-gray);
+  background-color: var(--color-gray-100);
   border-radius: var(--spacing-xxl);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
 }
 
-.left-section-tool,
-.right-section-tool {
+.translation-input-container,
+.translation-output-container {
   padding: var(--spacing-md);
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ main {
     background-color: inherit;
     border: none;
     resize: none;
-    color: var(--medium-gray);
+    color: var(--color-gray-600);
     font-size: var(--font-size-sm);
   }
 }
@@ -112,7 +112,7 @@ main {
 .toggle-switch {
   height: 0;
   width: 100%;
-  border: 1px dashed var(--light-gray);
+  border: 1px dashed var(--color-gray-400);
   position: relative;
 
   .swap-btn {
@@ -125,7 +125,7 @@ main {
 
 @media (min-width: 768px) {
   .toggle-switch {
-    border: 1px dashed var(--light-gray);
+    border: 1px dashed var(--color-gray-400);
     position: relative;
     width: 0;
     .swap-btn {
@@ -162,8 +162,8 @@ main {
     gap: 0;
   }
 
-  .left-section-tool,
-  .right-section-tool {
+  .translation-input-container,
+  .translation-output-container {
     padding: var(--spacing-xl);
 
     textarea {
@@ -175,15 +175,15 @@ main {
     padding: var(--spacing-xxxl) 0 5rem 0;
   }
 
-  .title-container {
+  .hero-container {
     gap: var(--spacing-md);
     padding-bottom: var(--spacing-xxxl);
 
-    .title {
+    .hero-title {
       font-size: var(--font-size-xxxl);
       line-height: 50px;
     }
-    .description {
+    .hero-description {
       font-size: var(--font-size-xl);
     }
   }
@@ -205,6 +205,6 @@ main {
 
 @media (min-width: 1215px) {
   .container {
-    max-width: 1215px;
+    max-width: 1440px;
   }
 }
