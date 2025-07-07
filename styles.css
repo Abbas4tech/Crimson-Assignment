@@ -14,20 +14,20 @@ main {
   background: linear-gradient(to right, #fbf5f8, #f2e7fb);
   height: 100%;
   width: 100%;
-  padding: var(--spacing-xxxl) 0 5rem 0;
+  padding: var(--spacing-md) 0 5rem 0;
 }
 
 .title-container {
-  padding-bottom: var(--spacing-xxxl);
+  padding-bottom: var(--spacing-md);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
   justify-content: center;
   align-items: center;
+  gap: var(--spacing-md);
 
   .title {
-    font-size: var(--font-size-xxxl);
-    line-height: 50px;
+    font-size: var(--font-size-xxl);
+    line-height: 30px;
     background: linear-gradient(
       to right,
       var(--blue),
@@ -41,7 +41,7 @@ main {
   }
 
   .description {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-md);
     line-height: var(--line-height-sm);
     text-align: center;
     color: var(--dark-gray);
@@ -167,6 +167,23 @@ main {
     padding: var(--spacing-xl);
 
     textarea {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  main {
+    padding: var(--spacing-xxxl) 0 5rem 0;
+  }
+
+  .title-container {
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-xxxl);
+
+    .title {
+      font-size: var(--font-size-xxxl);
+      line-height: 50px;
+    }
+    .description {
       font-size: var(--font-size-xl);
     }
   }

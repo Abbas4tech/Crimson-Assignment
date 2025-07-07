@@ -35,7 +35,6 @@
       content: url("/assets/dropdown.svg");
       display: inline-block;
       height: 1.75rem;
-      margin-left: var(--spacing-xxs);
     }
   }
 
