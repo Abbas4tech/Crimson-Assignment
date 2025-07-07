@@ -2,3 +2,25 @@ header {
   padding: var(--spacing-md);
   flex-wrap: wrap;
 }
+
+header.flex-container-between {
+  flex-direction: row;
+}
+
+nav.flex-container-between {
+  position: fixed;
+  background-color: var(--color-white);
+  width: 100%;
+  left: 0;
+  padding: var(--spacing-md);
+  z-index: 100;
+  opacity: 0;
+  button.button {
+    margin-left: 0;
+  }
+}
+
+button#toggle-menu {
+  display: block;
+  align-self: center;
+}

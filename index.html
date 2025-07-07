@@ -12,6 +12,8 @@
       <div>
         <img src="./assets/Logo.svg" alt="" />
       </div>
+
+      <button id="toggle-menu" class="button button-secondary">V</button>
       <nav class="flex-container-between">
         <button class="button button-nav">Product</button>
         <button class="button button-nav">Trinka Business</button>
@@ -134,6 +136,13 @@ Hola! Yo empecé aprendo Español hace dos mes en la escuela. Yo voy la universi
         const iconUrl = btn.getAttribute("data-icon");
         btn.classList.add("icon");
         btn.style.setProperty("--icon-url", `url('${iconUrl}')`);
+      });
+
+      const panel = document.querySelector("nav.flex-container-between");
+
+      let isPanelOpen = false;
+      document.getElementById("toggle-menu").addEventListener("click", (e) => {
+        console.log("button clicked", panel);
       });
     </script>
   </body>

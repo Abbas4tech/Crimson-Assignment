@@ -12,6 +12,7 @@
   cursor: pointer;
   font-size: var(--font-size-sm);
   width: max-content;
+  height: max-content;
 
   &.button-primary {
     background-color: var(--color-primary);
@@ -20,6 +21,10 @@
       opacity: 60%;
       background-color: var(--disabled-blue);
       cursor: not-allowed;
+    }
+
+    &:hover {
+      background-color: var(--color-dark-primary);
     }
   }
 
@@ -68,7 +73,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .button {
     padding: 0.625rem var(--spacing-md);
     font-size: var(--font-size-md);

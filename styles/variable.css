@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --color-primary: #6f2496;
+  --color-dark-primary: #611f82; /* 13% Darker then --color-primary */
   --color-primary-light: #f3e8ff;
   --color-accent-blue: #1a64e2;
   --color-accent-purple: #991e8e;
